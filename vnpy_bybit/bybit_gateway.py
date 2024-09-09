@@ -9,8 +9,8 @@ from typing import Callable
 from zoneinfo import ZoneInfo
 from functools import partial
 
-from vnpy_evo.event import EventEngine
-from vnpy_evo.trader.constant import (
+from vnpy.event import EventEngine
+from vnpy.trader.constant import (
     Direction,
     Exchange,
     Interval,
@@ -20,8 +20,8 @@ from vnpy_evo.trader.constant import (
     Offset,
     OptionType
 )
-from vnpy_evo.trader.gateway import BaseGateway
-from vnpy_evo.trader.object import (
+from vnpy.trader.gateway import BaseGateway
+from vnpy.trader.object import (
     AccountData,
     BarData,
     CancelRequest,
@@ -34,8 +34,8 @@ from vnpy_evo.trader.object import (
     TickData,
     TradeData
 )
-from vnpy_evo.rest import Request, RestClient
-from vnpy_evo.websocket import WebsocketClient
+from vnpy_rest import Request, RestClient
+from vnpy_websocket import WebsocketClient
 
 
 # Timezone
